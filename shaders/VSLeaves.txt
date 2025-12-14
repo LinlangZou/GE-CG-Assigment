@@ -1,0 +1,58 @@
+cbuffer leavesBuffer : register(b0)
+{
+    float4x4 VP;
+    float4x4 R;
+    float T;
+    float H;
+    float billboardSize;
+};
+
+struct VS_INPUT
+{
+    float4 Pos : POSITION;
+    float3 Normal : NORMAL;
+    float3 Tangent : TANGENT;
+    float2 TexCoords : TEXCOORD;
+    float3 InstancePos : INSTANCE_POS;
+    float InstanceOffset : INSTANCE_OFFSET;
+};
+
+struct PS_INPUT
+{
+    float4 Pos : SV_POSITION;
+    float2 TexCoords : TEXCOORD;
+};
+
+float GetHeight()
+{
+    return fmod(T, 10.0) / 10.0;
+}
+
+PS_INPUT VS(VS_INPUT input)
+{
+    PS_INPUT output;
+    
+    float3 worldPos = input.InstancePos;
+    
+    float horizontalOffset = sin(worldPos.x + T * 2.0) * 0.5;
+    worldPos.x += horizontalOffset;
+    worldPos.z += horizontalOffset * 0.5;
+    
+    float height = GetHeight();
+    float offset = input.InstanceOffset;
+    worldPos.y = H - fmod(worldPos.y - offset + height * H, H) + offset;
+    
+    float3 billboardPos = input.Pos.xyz * billboardSize;
+    
+    float3 right = float3(R[0][0], R[1][0], R[2][0]);
+    float3 up = float3(R[0][1], R[1][1], R[2][1]);
+    
+    float3 worldBillboardPos = worldPos + billboardPos.x * right + billboardPos.y * up;
+    
+    float4 pos = float4(worldBillboardPos, 1.0);
+    output.Pos = mul(pos, VP);
+    output.TexCoords = input.TexCoords;
+    
+    return output;
+}
+

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="H">
+      <UniqueIdentifier>{4151cec1-b462-44e4-84e0-04bff484d344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{214fe529-f1b5-4788-9a03-48ee92a83325}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Animation.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Camera.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Collision.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Gameobject.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GEMLoader.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Maths.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Mesh.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Particles.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PSO.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Shaders.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\stb_image.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Texture.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Timer.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Window.h">
+      <Filter>H</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Collision.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gameobject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Particles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Texture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utilities.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
