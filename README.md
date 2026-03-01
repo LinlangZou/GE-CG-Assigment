@@ -33,5 +33,28 @@ Developed as a coursework project for the Computer Graphics module, **Rasterizer
 
 * **Language:** C++
 * **Shading Language:** HLSL (High-Level Shader Language)
-* **Graphics API:** DirectX 12 (D3D1
+* **Graphics API:** DirectX 12 (D3D12)
+* **IDE / Build Tools:** Visual Studio 2022
+* **Platform:** Windows (x64)
 
+## 📂 Project Structure (Brief)
+
+* **`Src/`** - Core C++ source files including the engine loop, renderer, memory management, and gameplay logic.
+* **`Shaders/`** - HLSL files containing vertex and pixel shaders for standard rendering, lighting, normal mapping, and skeletal bone blending.
+* **`Assets/`** - Textures, particle maps, and the custom `.GEM` binary model files.
+
+## 🚀 Build & Run
+
+1. Clone the repository to your local machine.
+2. Open the solution file (`.sln`) in **Visual Studio 2022**.
+3. Ensure the active solution platform is set to **x64**.
+4. Make sure you have the necessary Windows SDK installed (Windows 10 or 11 SDK) with DirectX 12 support.
+5. Build the solution (`Ctrl + Shift + B`).
+6. Run the project (`F5` or `Ctrl + F5`) to launch the playable level.
+
+## 🎓 Author & Course Information
+
+* **Author:** Linlang Zou (Student ID: 5684282)
+* **Course:** Computer Graphics
+* **Institution:** University of Warwick
+* **Date:** December 2025
