@@ -54,7 +54,7 @@ Developed as a coursework project for the Computer Graphics module, **Rasterizer
 
 ## 🎓 Author & Course Information
 
-* **Author:** Linlang Zou (Student ID: 5684282)
+* **Author:** Linlang Zou 
 * **Course:** Computer Graphics
 * **Institution:** University of Warwick
 * **Date:** December 2025
